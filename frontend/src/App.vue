@@ -1,3 +1,10 @@
 <template>
-  1
+  <AboutPage/>
 </template>
+
+<script setup>
+import AboutPage from './components/AboutPage.vue';
+</script>
+
+<style>
+</style>
