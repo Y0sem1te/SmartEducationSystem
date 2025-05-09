@@ -53,8 +53,8 @@
             <div class="feature-icon">
               <i class="fas fa-brain"></i>
             </div>
-            <h3>专注度分析</h3>
-            <p>利用姿态检测，行为统计和情绪行为的综合检测来确定学生专注于课堂的程度</p>
+            <h3>活跃度分析</h3>
+            <p>统计上课时学生抬头、低头、举手、起立等情况，判断课堂整体的活跃度</p>
           </div>
           
           <div class="feature-item">
@@ -405,6 +405,7 @@
     text-align: center;
     border-radius: 8px;
     margin-top: 3rem;
+    background-color: #8ae2ed;
   }
   
   .contact-section h2 {
