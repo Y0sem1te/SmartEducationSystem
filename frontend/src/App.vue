@@ -70,7 +70,7 @@ const router = useRouter()
 const go = (where) => {
   switch (where) {
     case 1:
-      router.push('/')
+      router.push('/home')
       break;
     case 2:
       notification.value = true
@@ -82,7 +82,7 @@ const go = (where) => {
     router.push('/')
       break;
     case 5:
-    router.push('/about')
+    router.push('/')
       break;
   }
 }
@@ -105,6 +105,10 @@ onMounted(()=>{
 body {
   background-color: #b2ebf2;
   margin: 0;
+}
+
+.el-main{
+  overflow: hidden !important
 }
 
 .el-aside {

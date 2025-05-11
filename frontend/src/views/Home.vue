@@ -5,13 +5,13 @@
     <span class="card-container">
         <el-card style="min-width: 480px;min-height: 480px;background-color: #b2ebf2;">
             <template #header>
-                <span class="card-header">考试功能</span>
+                <span class="card-header" @click="goto(1)">考试功能</span>
             </template>
             这是关于这个内容的介绍
         </el-card>
         <el-card style="min-width: 480px;min-height: 480px;background-color: #b2ebf2;">
             <template #header>
-                <span class="card-header">课堂功能</span>
+                <span class="card-header" @click="goto(2)">课堂功能</span>
             </template>
             这是关于这个内容的介绍
         </el-card>
@@ -20,7 +20,15 @@
 </template>
 
 <script setup>
-
+import { useRouter } from 'vue-router';
+const router=useRouter()
+const goto = (where)=>{
+    if(where==1){
+        router.push('/exam')
+    }else{
+        router.push('/exam')
+    }
+}
 </script>
 
 <style>
